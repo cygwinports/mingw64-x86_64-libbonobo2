@@ -1,0 +1,11 @@
+--- origsrc/libbonobo-2.32.1/activation-server/activation-server-main.c	2010-08-18 12:41:32.000000000 -0500
++++ src/libbonobo-2.32.1/activation-server/activation-server-main.c	2012-09-16 00:46:06.210927000 -0500
+@@ -59,7 +59,7 @@
+ #ifdef G_OS_WIN32
+ #include <io.h>
+ #include <conio.h>
+-#define _WIN32_WINNT 0x0500 
++#define _WIN32_WINNT 0x0501
+ #include <windows.h>
+ 
+ static gboolean allocated_new_console = FALSE;

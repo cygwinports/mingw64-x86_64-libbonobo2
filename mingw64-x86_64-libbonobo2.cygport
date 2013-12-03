@@ -1,0 +1,22 @@
+CROSS_HOST="x86_64-w64-mingw32"
+ORIG_PN="libbonobo"
+inherit cross gnome2
+
+NAME="mingw64-x86_64-libbonobo2"
+VERSION=2.32.1
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="GNOME component and compound document system for Win64 toolchain"
+DESCRIPTION="This is the non-GUI part of the GNOME component and compound
+document system."
+PATCH_URI="
+	01-mingw.patch
+	02-glib-deprecations.patch
+"
+
+DIFF_EXCLUDES="*.pc"
+
+CYGCONF_ARGS="--libexecdir=${CROSS_BINDIR}"
+MAKEOPTS+=" bin_PROGRAMS= bin_SCRIPTS= man_MANS= samples_PROGRAMS= server_dot_in= "
+
+KEEP_LA_FILES="none"

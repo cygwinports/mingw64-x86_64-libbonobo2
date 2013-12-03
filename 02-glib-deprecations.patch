@@ -1,0 +1,10 @@
+--- origsrc/libbonobo-2.32.1/activation-server/Makefile.am	2010-08-18 12:41:32.000000000 -0500
++++ src/libbonobo-2.32.1/activation-server/Makefile.am	2013-12-03 01:21:55.890274500 -0600
+@@ -17,7 +17,6 @@ INCLUDES=					\
+ 	$(SERVER_CFLAGS)			\
+ 	$(WARN_CFLAGS)				\
+ 	-DSERVER_CONFDIR=\"$(sysconfdir)\"	\
+-	-DG_DISABLE_DEPRECATED			\
+ 	-DG_LOG_DOMAIN=\"Bonobo-Activation-Server\" \
+ 	$(NULL)
+ 
